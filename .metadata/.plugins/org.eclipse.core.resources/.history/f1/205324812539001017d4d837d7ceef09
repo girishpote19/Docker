@@ -1,0 +1,5 @@
+package com.dockerProj.SimpleAppForPrac;
+
+public class HelloController {
+
+}
