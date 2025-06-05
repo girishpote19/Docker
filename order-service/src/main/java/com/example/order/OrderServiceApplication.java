@@ -24,7 +24,7 @@ public class OrderServiceApplication {
     @GetMapping("/order")
     public String getOrder() {
         //String user = restTemplate().getForObject("http://localhost:9091/user", String.class); //Order Service Talk to User-service
-        String user = restTemplate().getForObject("http://user-service:8081/user", String.class);
+        String user = restTemplate().getForObject("http://user-service:9091/user", String.class);
         return "Order placed by -> " + user;
     }
 }
