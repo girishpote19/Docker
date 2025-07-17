@@ -7,6 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello from Dockerized Spring Boot app!";
+		return """
+                <html>
+                <body style='font-family: Arial, sans-serif;'>
+                    <h2>Deployed My First Spring Boot Application on AWS EC2!</h2>
+                    <p>Hello! I’m Girish — currently learning DevOps. This is my first Java application successfully deployed on an AWS EC2 instance. 🚀</p>
+                    <p>I’m excited to share my progress and connect with others who are also learning DevOps. Let’s grow and learn together!</p>
+                    <p>
+                        👉 <a href='https://www.linkedin.com/in/girish-pote-608a40193/' target='_blank'>
+                        Visit my LinkedIn Profile</a>
+                    </p>
+                </body>
+            </html>
+            """;
 	}
 }
